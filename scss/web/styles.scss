@@ -1,3 +1,5 @@
+
+
 @media screen and (min-width: 1250px) {
 	.btn-dark-outline:hover {
 		background: rgb(20,49,96);
@@ -8,13 +10,15 @@
 		color: rgb(20,49,96);
 		background: whitesmoke;
 	}
+
+
 	/*
 		Basic wrapper config to allow a basic layout to fit to screen and create
 		foundation to add elements 
 	*/
 	#wrapper {
 		display: grid;	
-		grid-template-columns: 7.5fr 2.5fr;
+		grid-template-columns: auto 400px;
 		grid-template-rows: 100vh;
 	}
 
@@ -25,35 +29,27 @@
 		background: whitesmoke;
 		padding: 20px;
 		display: grid;
-		grid-template-rows: repeat(36, (100% / 36));
-
-		.address {
-			grid-row: 1/3;
-		}
-
-		.open {
-			grid-row: 9/11;
-		}
-
-		.food {
-			grid-row: 12/14;
-		}
-
-		.wifi {
-			grid-row: 15/17;
-		}
-		.content {
-			display: block;
-			grid-row: 20 / 26;
-
-			h1 {
-				text-align: center;
-			}
-		}
-
-		.bottom-question {
-			text-align: center;
-			grid-row: 34/36;
-		}
+		grid-template-columns: 1fr;
+		grid-auto-rows: minmax(0, 100px);
+		grid-gap: 10px;
+		grid-template-areas: 
+			"a" 
+			"." 
+			"."
+			"."
+			"o" 
+			"f" 
+			"w" 
+			"."
+			"." 
+			"c" 
+			"c" 
+			"." 
+			"." 
+			"."
+			"."
+			"."
+			"i"
+			".";
 	}
 }
