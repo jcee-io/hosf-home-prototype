@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin");
 @media screen and (min-width: 1250px) {
   /*
 		Basic wrapper config to allow a basic layout to fit to screen and create
@@ -40,7 +41,8 @@
 
 body {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Cabin', sans-serif; }
 
 .address {
   grid-area: a; }

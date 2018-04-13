@@ -1,11 +1,13 @@
 @import 'web/styles';
 @import 'mobile/styles';
+@import url('https://fonts.googleapis.com/css?family=Cabin');
 
 $hosfColor: #10B535;
 
 body {
 	padding: 0;
 	margin: 0;
+	font-family: 'Cabin', sans-serif;
 }
 
 .address {
